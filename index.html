@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALBINAA FESTIVAL 2027 - Teaser</title>
+  
+  <!-- Icon Tab Browser (Favicon) -->
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Font Google: Cinzel & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Background Overlay Image Hero -->
+  <div class="bg-hero"></div>
+
+  <!-- Main Hero Teaser Section -->
+  <main id="home" class="hero-section">
+    <p class="subtitle-top">WELCOME TO</p>
+    <h1 class="title-festival">ALBINAA FESTIVAL</h1>
+    <p class="year">-2027-</p>
+    <p class="tagline">"Chase The Gold, Shine The World"</p>
+
+    <!-- 2 CTA Buttons -->
+    <div class="cta-container">
+      <a href="guidebook.pdf" download class="btn btn-primary">DOWNLOAD GUIDEBOOK</a>
+      <button id="openContactBtn" class="btn btn-outline">CONTACT US</button>
+    </div>
+
+    <!-- Location with Google Maps Link -->
+    <a href="https://maps.app.goo.gl/GWMhQjxfvcvZ6GN6A" target="_blank" rel="noopener noreferrer" class="location">
+      📍 Albinaa IBS, Bekasi
+    </a>
+
+    <!-- Countdown Section -->
+    <div class="countdown-container">
+      <p class="countdown-title">COUNTDOWN TO ALBINAA FESTIVAL 2027</p>
+      <div class="countdown-box">
+        <div class="time-block">
+          <span id="days" class="time-val">000</span>
+          <span class="time-lbl">HARI</span>
+        </div>
+        <div class="time-block">
+          <span id="hours" class="time-val">00</span>
+          <span class="time-lbl">JAM</span>
+        </div>
+        <div class="time-block">
+          <span id="minutes" class="time-val">00</span>
+          <span class="time-lbl">MENIT</span>
+        </div>
+        <div class="time-block">
+          <span id="seconds" class="time-val">00</span>
+          <span class="time-lbl">DETIK</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Section Deskripsi Festival -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <h2 class="section-title">About</h2>
+      <div class="gold-divider"></div>
+      <p class="about-description">
+        Albinaa Festival adalah Ajang kompetisi bergengsi tingkat nasional yang mempertemukan pelajar tingkat SD dan SMA dari berbagai daerah di Indonesia, khususnya Jawa Barat, Jakarta, dan Banten. Bertujuan untuk menjadi sarana bagi para siswa untuk mengasah potensi, menguji ketangkasan, memupuk jiwa sportivitas, serta membangun iklim kompetisi yang sehat dan islami.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section List Lomba (SMP & SMA) -->
+  <section id="competition" class="competition-section">
+    <div class="section-container">
+      <h2 class="section-title">CABANG LOMBA</h2>
+      <div class="gold-divider"></div>
+
+      <div class="comp-grid">
+        <!-- Category SMP -->
+        <div class="comp-card">
+          <div class="comp-header">Tingkat SMP / Sederajat</div>
+          <ul class="comp-list">
+            <li><span>✦</span> MHQ 13 Juz</li>
+            <li><span>✦</span> Pidato Bahasa Arab</li>
+            <li><span>✦</span> Pidato Bahasa Inggris</li>
+            <li><span>✦</span> Olimpiade Matematika</li>
+            <li><span>✦</span> Desain Poster Digital</li>
+          </ul>
+        </div>
+
+        <!-- Category SMA -->
+        <div class="comp-card">
+          <div class="comp-header">ALYMPIC (Tingkat SD / sederajat)</div>
+          <ul class="comp-list">
+            <li><span>✦</span> PIDATO</li>
+            <li><span>✦</span> SPEECH</li>
+            <li><span>✦</span> MHQ</li>
+            <li><span>✦</span> PUISI</li>
+            <li><span>✦</span> CIPTA CERPEN</li>
+            <li><span>✦</span> MTQ</li>
+            <li><span>✦</span> ADZAN</li>
+            <li><span>✦</span> ALBINAA CERDAS CERMAT</li>
+            <li><span>✦</span> POSTER</li>
+            <li><span>✦</span> STORY TELLING</li>
+            <li><span>✦</span> ALBINAA SCIENCE EXHIBITION</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2027 ALBINAA FESTIVAL. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal Contact Person (WhatsApp) -->
+  <div id="contactModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="closeContactBtn" class="btn-back" aria-label="Kembali">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+        <h2>CHAT PERSON (WHATSAPP)</h2>
+      </div>
+      <p class="modal-subtitle">Tersedia 2 nomor layanan aktif:</p>
+
+      <div class="cp-list">
+        <!-- CP 1 -->
+        <a href="https://wa.me/6281234567890?text=Halo%20Kak%20Haris,%20saya%20ingin%20bertanya%20mengenai%20Albinaa%20Festival" target="_blank" class="cp-card">
+          <div class="cp-info">
+            <h3>Kak Haris Ikhwan (CP 1)</h3>
+            <p>Aktif (Mulai Chat WhatsApp)</p>
+          </div>
+          <div class="wa-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.762.459 3.48 1.332 5.001l-1.416 5.169 5.293-1.386c1.472.802 3.136 1.226 4.778 1.227h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.037-5.176-2.922-7.062a9.923 9.923 0 00-7.068-2.948zm5.955 14.153c-.252.712-1.463 1.365-2.016 1.439-.512.068-1.18.098-3.398-.82-2.838-1.176-4.664-4.062-4.805-4.253-.142-.19-1.148-1.528-1.148-2.915 0-1.388.726-2.072.983-2.355.257-.283.562-.353.75-.353.187 0 .375.002.538.009.172.008.403-.065.631.482.235.565.801 1.956.871 2.098.07.142.117.308.023.498-.094.19-.141.308-.282.474-.141.166-.298.372-.425.499-.141.141-.288.294-.124.577.164.283.729 1.205 1.564 1.949 1.074.957 1.98 1.253 2.263 1.394.283.141.448.118.613-.071.165-.189.705-.822.893-1.105.188-.283.376-.235.634-.141.258.094 1.642.774 1.924.915.282.141.47.212.54.33.07.118.07.683-.182 1.395z"/>
+            </svg>
+          </div>
+        </a>
+
+        <!-- CP 2 -->
+        <a href="https://wa.me/6289876543210?text=Halo%20Kak%20Ihsan,%20saya%20ingin%20bertanya%20mengenai%20Albinaa%20Festival" target="_blank" class="cp-card">
+          <div class="cp-info">
+            <h3>Kak Ihsan (CP 2)</h3>
+            <p>Aktif (Mulai Chat WhatsApp)</p>
+          </div>
+          <div class="wa-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.762.459 3.48 1.332 5.001l-1.416 5.169 5.293-1.386c1.472.802 3.136 1.226 4.778 1.227h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.037-5.176-2.922-7.062a9.923 9.923 0 00-7.068-2.948zm5.955 14.153c-.252.712-1.463 1.365-2.016 1.439-.512.068-1.18.098-3.398-.82-2.838-1.176-4.664-4.062-4.805-4.253-.142-.19-1.148-1.528-1.148-2.915 0-1.388.726-2.072.983-2.355.257-.283.562-.353.75-.353.187 0 .375.002.538.009.172.008.403-.065.631.482.235.565.801 1.956.871 2.098.07.142.117.308.023.498-.094.19-.141.308-.282.474-.141.166-.298.372-.425.499-.141.141-.288.294-.124.577.164.283.729 1.205 1.564 1.949 1.074.957 1.98 1.253 2.263 1.394.283.141.448.118.613-.071.165-.189.705-.822.893-1.105.188-.283.376-.235.634-.141.258.094 1.642.774 1.924.915.282.141.47.212.54.33.07.118.07.683-.182 1.395z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

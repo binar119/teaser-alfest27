@@ -27,7 +27,7 @@ body {
 .bg-hero {
   position: fixed;
   inset: 0;
-  background-image: url('bg-hero.png');
+  background-image: url('bg-hero.webp');
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -251,11 +251,53 @@ body {
   letter-spacing: 1px;
 }
 
-/* About & Competition Sections */
+/* ============================================================================
+   BACKGROUND GRID KOTA-KOTA & GRADASI DINAMIS (UNTUK SECTION TANPA GAMBAR)
+   ============================================================================ */
+
+@keyframes dynamicGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .about-section, .competition-section {
-  padding: 60px 20px;
-  background: rgba(11, 17, 30, 0.9);
-  border-top: 1px solid rgba(212, 175, 55, 0.1);
+  position: relative;
+  padding: 80px 20px;
+  background-color: var(--color-bg-dark);
+  background-image: 
+    linear-gradient(135deg, rgba(11, 17, 30, 0.95), rgba(21, 32, 54, 0.9), rgba(11, 17, 30, 0.95)),
+    linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 200% 200%, 40px 40px, 40px 40px;
+  animation: dynamicGradient 15s ease infinite;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  overflow: hidden;
+}
+
+.about-section::before, .competition-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-section .section-container, 
+.competition-section .section-container {
+  position: relative;
+  z-index: 1;
 }
 
 .section-container {
@@ -296,7 +338,6 @@ body {
 
 .comp-card {
   background: var(--color-card-bg);
-  /*border: 1px solid rgba(212, 175, 55, 0.2);*/
   border-radius: 12px;
   overflow: hidden;
   text-align: left;
@@ -355,7 +396,7 @@ body {
 }
 
 .modal-overlay.hidden {
-  display: none;
+  display: none !important;
 }
 
 .modal-content {
@@ -456,18 +497,14 @@ body {
   .time-val { font-size: 1.2rem; }
   
   .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
-  z-index: 9999; /* Dipastikan paling atas */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.modal-overlay.hidden {
-  display: none !important;
-}
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
 }

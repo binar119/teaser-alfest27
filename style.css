@@ -37,7 +37,10 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(11, 17, 30, 0.85), rgba(11, 17, 30, 0.95));
+  /* Warna gelap transparan dikombinasikan dengan efek blur */
+  background: rgba(11, 17, 30, 0.7); 
+  backdrop-filter: blur(3px); /* Efek frosted glass / kaca buram */
+  -webkit-backdrop-filter: blur(3px); /* Support untuk Safari */
 }
 
 /* Navbar */
